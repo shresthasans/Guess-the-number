@@ -137,6 +137,12 @@ body {
 .h-8 {
   height: var(--base-size-2);
 }
+.h-12 {
+  height: 3rem;
+}
+.leading-lg{
+  line-height: 1.5;
+}
 
 /* Spacing */
 
