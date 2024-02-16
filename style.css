@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
-:root{
+:root {
   --primary-color: #eee;
-  --base-size:1rem;
-  --base-size-2:2rem;
-  --secondary-color:#222;
+  --base-size: 1rem;
+  --base-size-2: 2rem;
+  --secondary-color: #222;
   --green: #008000;
   --blue: #0198cb;
 }
@@ -21,198 +21,184 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: (--primary-color)
+  font-family: "Press Start 2P", sans-serif;
+  color: (--primary-color);
 }
 
-
-
 /* Background */
-.bg-green{
+.bg-green {
   background-color: var(--green);
 }
 
-.bg-white{
-  background-color: var(--primary-color)
+.bg-white {
+  background-color: var(--primary-color);
 }
 
-.bg-blue{
-  background-color: var(--blue)
+.bg-blue {
+  background-color: var(--blue);
 }
 
-.bg-grey-dark{
+.bg-grey-dark {
   background-color: var(--secondary-color);
 }
-.text-grey-dark{
+.text-grey-dark {
   color: var(--secondary-color);
 }
 
-.text-white{
+.text-white {
   color: var(--primary-color);
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
 /*Flex */
 
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.flex-auto{
+.flex-auto {
   flex: 1 1 auto;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.justify-around{
+.justify-around {
   justify-content: space-between;
 }
 
-.h-full{
-  height: 100%;;
+.h-full {
+  height: 100%;
 }
 
-.w-full{
-  width: 100%;;
+.w-full {
+  width: 100%;
 }
 
-.m-auto{
+.m-auto {
   margin: auto;
 }
 
-.gap-2{
+.gap-2 {
   gap: 0.5rem;
 }
 
-.gap-8{
+.gap-8 {
   gap: var(--base-size-2);
 }
 
-.relative{
+.relative {
   position: relative;
 }
-.absolute{
+.absolute {
   position: absolute;
 }
 
-
 /* Text sizes */
 
-.text-96{
+.text-96 {
   font-size: 6rem;
 }
 
-.text-3{
+.text-3 {
   font-size: 0.75rem;
 }
 
-.text-sm{
+.text-sm {
   font-size: 1.5rem;
 }
 
-.text-xs{
+.text-xs {
   font-size: 1.125rem;
 }
 
-.w-160{
-  width:10rem;
+.w-160 {
+  width: 10rem;
 }
-.h-160{
-  height:10rem;
+.h-160 {
+  height: 10rem;
 }
-.h-8{
+.h-8 {
   height: var(--base-size-2);
 }
 
 /* Spacing */
 
-.mt-1{
+.mt-1 {
   margin-top: 1rem;
 }
 
-.p-8{
+.p-8 {
   padding: var(--base-size-2);
 }
 
-.mb-8{
+.mb-8 {
   margin-bottom: var(--base-size-2);
 }
 
-.mt-80{
+.mt-80 {
   margin-top: 5rem;
 }
 
-.py-4{
+.py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.py-8{
+.py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.px-8{
+.px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}  
-
-.pin-t{
-  top:0;
 }
 
-.left-50per{
+.pin-t {
+  top: 0;
+}
+
+.left-50per {
   left: 50%;
 }
 
-.pos-center{
+.pos-center {
   transform: translate(-50%, -50%);
 }
 
-
 /* LAYOUT */
 header {
-  height: 35vh;
+  height: 35dvh;
   border-bottom: 7px solid #eee;
 }
 
 main {
-  height: 65vh;
+  height: 65dvh;
   color: var(--primary-color);
-  
 }
 
-
-
-
-
-
-.border-none{
-  border:none
+.border-none {
+  border: none;
 }
-
-
 
 .btn {
   font-family: inherit;
 }
 
-
-
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -220,77 +206,72 @@ main {
   background-color: #ccc;
 }
 
-.btn:disabled:hover{
+.btn:disabled:hover {
   background-color: var(--blue);
 }
 
 .guess {
-  background: var(--secondary-color);;
+  background: var(--secondary-color);
   border: 4px solid var(--primary-color);
   font-family: inherit;
   color: var(--primary-color);
 }
 
-.w-160{
+.w-160 {
   width: 10rem;
 }
 
-.h-64{
-  height: 4rem;;
+.h-64 {
+  height: 4rem;
 }
 
-.rounded-2{
+.rounded-2 {
   border-radius: 0.5rem;
 }
 
-.mb-base{
-  margin-bottom: var(--base-size)
+.mb-base {
+  margin-bottom: var(--base-size);
 }
 
-
-
-@media(min-width:769px){
-
-  .md\:text-10{
+@media (min-width: 769px) {
+  .md\:text-10 {
     font-size: 2.5rem;
   }
 
-  .md\:text-base{
+  .md\:text-base {
     font-size: var(--base-size);
   }
-  .md\:text-8{
-    font-size: var(--base-size-2);;
+  .md\:text-8 {
+    font-size: var(--base-size-2);
   }
 
-  .md\:py-8{
+  .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  
-  .md\:px-12{
+
+  .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }  
+  }
 
-  .md\:text-80{
+  .md\:text-80 {
     font-size: 5rem;
   }
 
   .md\:w-400 {
     width: 25rem;
   }
-  
-  .md\:h-144{
+
+  .md\:h-144 {
     height: 9rem;
   }
 
-  .md:\rounded-base{
+  .md: \rounded-base {
     border-radius: var(--base-size);
   }
 
-  .md\:mb-48{
+  .md\:mb-48 {
     margin-bottom: 3rem;
   }
-
 }
-
