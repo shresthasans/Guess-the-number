@@ -18,11 +18,15 @@
 html {
   font-size: 16px;
   box-sizing: border-box;
+  height: -webkit-fill-available;
 }
 
 body {
   font-family: "Press Start 2P", sans-serif;
   color: (--primary-color);
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 /* Background */
