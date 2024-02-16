@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Guess My Number!</title>
+</head>
+
+<body class="bg-grey-dark">
+  <header class="flex flex-col items-center justify-center">
+
+    <div class="flex flex-col m-auto gap-8 items-center text-white">
+
+      <h1 class="md:text-10 text-sm">Guess My Number!</h1>
+      <p class="between md:text-xs">(Between 1 and 20)</p>
+    </div>
+  </header>
+  <main class="flex flex-col items-center relative p-8">
+    <div class="flex flex-col items-center flex-auto">
+      <div
+        class="number w-160 h-160 flex items-center justify-center text-grey-dark absolute left-50per pin-t bg-white pos-center text-96">
+        ?
+      </div>
+      <p class="message mt-80 md:text-xs h-8 mb-8">Start guessing...</p>
+      <section class="flex items-center flex-col ">
+        <input type="number"
+          class="guess text-sm md:text-80 text-center w-160 md:w-400 h-64 md:h-144 rounded-2 md:rounded-base mb-base md:mb-48" />
+        <button
+          class="btn bg-blue border-none md:text-8 py-4 px-8 md:py-8 md:px-12 cursor-pointer rounded-2 md:rounded-base check">Check!</button>
+      </section>
+    </div>
+    <section class="flex justify-around w-full items-center ">
+      <div class="flex flex-col gap-2">
+        <p class="label-score text-3 md:text-base">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore text-3 md:text-base">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </div>
+      <button
+        class="btn bg-white border-none md:text-8 py-4 px-8 md:py-8 md:px-12 cursor-pointer rounded-2 md:rounded-base again">Restart</button>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
